@@ -1,0 +1,269 @@
+*{
+  font-family: poppins,system-ui;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  width: 97vw;
+  height: 75px;
+  padding:1%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+header img{
+  width: 160px;
+}
+header nav{
+  display: flex;
+  column-gap: 30px;
+}
+header nav a{
+  text-decoration: none;
+  border-radius: 10px;
+}
+header nav p{
+  color: #f7a300;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+header nav a:hover p{
+  color: #3662ab;
+  transition: 0.4s;
+}
+#home{
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 98vh;
+  background-color: #f7a300;
+}
+.titulos{
+  width: 50%; 
+  padding-left: 70px;
+}
+#home h1{
+  margin: 0 0 20px 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  color: white;
+}
+#home h2{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 56px;
+  color: white;
+}
+
+.imagem_home{
+  width: 50%;
+}
+
+.imagem_home img{
+  height: 98vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#sobre{
+  display: flex;
+  padding: 50px;
+  background-color: #f7f8f9;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.container_sobre{
+  display: flex;
+  padding: 50px;
+  column-gap: 50px;
+  width: 1024px;
+}
+
+.card_historia{
+  text-align: justify;
+}
+.card_missao{
+  text-align: justify;
+}
+
+#servicos{
+  background-color: #3662ab;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#servicos h3{
+  color: white;
+}
+
+.container_servicos{
+  display: flex;
+  padding: 50px;
+  column-gap: 50px;
+  justify-content: space-between;
+  width: 1024px;
+}
+.card_servico{
+  height: 300px;
+  width: 300px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 5px solid transparent;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.card_servico:hover{
+  border: 5px solid #f7a300;
+  transition: 0.4s;
+}
+
+.card_servico h5{
+  text-align: center;
+  color: #f7a300;
+  font-size: 15px;
+  font-weight: bold;
+}
+.card_servico p{
+  text-align: justify;
+}
+
+#beneficios{
+  background-color: white;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#beneficios > p{
+  width: 1000px;
+}
+
+.container_beneficios{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding: 20px;
+  width: 1200px;
+}
+.card_beneficio{
+  display: flex;
+  padding: 25px;
+  border-radius: 15px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 22%;
+  box-shadow: 1px 3px 23px 1px rgba(0,0,0,0.25);
+  transition: 0.4s;
+  opacity: 50%;
+}
+
+.card_beneficio:hover{
+  box-shadow: 1px 3px 23px 1px rgba(0,0,0,0.54);
+  transition: 0.4s;
+  opacity: 100%;
+}
+
+.card_beneficio p{
+  text-align: justify;
+}
+
+.card_beneficio h6{
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+  
+}
+.card_beneficio img{
+  width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#contato{
+  background-color: #f7a300;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contato h3{
+  color: white;
+}
+.container_contatos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  width: 1200px;
+
+}
+.info_contato{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card_contatos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.card_contatos img{
+  width: 25px;
+}
+.card_contatos a{
+  text-decoration: none;
+  color: black;
+}
+
+footer{
+  width: 94vw;
+  height: 40px;
+  left: 0;
+  bottom: 0;
+  background-color: #f7a300;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+footer img{
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p{
+  color: #3662ab;
+  font-weight: bold;
+}
+.whatsapp_btn{
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.2s;
+}
